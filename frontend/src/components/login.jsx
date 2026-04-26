@@ -10,7 +10,7 @@ function Login() {
     const navigate = useNavigate()
 
     function check(){
-        var logindetails = axios.get(`http://localhost:5000/dashboard?email=${email}&password=${pass}`)
+        var logindetails = axios.get(`https://netflix-login-7u7g.onrender.com/dashboard?email=${email}&password=${pass}`)
         logindetails.then((data)=>{
             if(data.data === true){
                 navigate('/dashboard')
