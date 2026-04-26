@@ -1,0 +1,259 @@
+*{
+  /* outline:solid yellow 1px; */
+  margin:0px;
+  padding:0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: black;
+}
+
+.navbar{
+  padding:20px;
+}
+.navbar-title{
+  color:red;
+  font-size:40px; 
+  margin-left:25px;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: fit-content;  
+  margin: 0 auto;      
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.login-title{
+  color:white;
+  text-align:center;
+}
+.input-box{
+  width:300px;
+  background:transparent;
+  padding:15px;
+  border:solid red 1px;
+  border-radius:5px;
+  margin:10px;
+  font-size:18px;
+}
+.input-box:focus{
+  outline:none;
+  border:solid red 1px;
+  background-color:white;
+  color:black;
+}
+.input-box:not(:placeholder-shown) {
+  background-color: white;
+  color: black;}
+.btn-submit{
+      color:white;
+      background-color:red;
+      padding:12px;
+      font-size:24px;
+      width:60%;
+      text-align: center;
+      border:none;
+      border-radius:5px;
+      cursor:pointer;
+}
+.submit-row{
+     text-align:center;
+}
+
+.credential-container {
+  width: 330px;
+  background: #161616;
+  border: 1px solid rgba(229, 9, 20, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px auto;
+  box-shadow: 0 8px 32px rgba(229, 9, 20, 0.12);
+  padding: 20px;
+}
+
+.credential-title {
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  margin-bottom: 12px;
+}
+
+.credential-item {
+  margin-bottom: 10px;
+}
+
+.credential-content {
+  
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  font-size: 17px;
+  color: #e50914;
+}
+
+.credential-value {  
+  
+  font-weight: 300;
+  font-size: 15px;
+  color: #e8e8e8;
+}
+
+.credential-footer {
+  
+  font-size: 11px;
+  color: #555;
+  text-align: center;
+  margin-top: 14px;
+  letter-spacing: 0.4px;
+}
+
+.dashboard {
+  background-color: black;
+  color: white;
+  padding: 24px;
+  min-height: 100vh;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  background: #111;
+  border: 1px solid #222;
+  border-radius: 10px;
+  padding: 36px;
+  margin-bottom: 32px;
+  box-sizing: border-box;
+}
+.banner-tag {
+  background: #e50914;
+  color: white;
+  font-size: 10px;
+  letter-spacing: 2px;
+  padding: 3px 10px;
+  border-radius: 3px;
+  display: inline-block;
+  margin-bottom: 12px;
+  font-weight: 500;
+}
+.banner-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 48px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+.banner-meta {
+  color: #888;
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+.banner-desc {
+  color: #bbb;
+  font-size: 14px;
+  max-width: 500px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  font-weight: 300;
+}
+.btn-play {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 28px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: 'Barlow', sans-serif;
+}
+
+/* Section */
+.section-label {
+  font-size: 10px;
+  color: #e50914;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.section-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin-bottom: 14px;
+}
+
+/* Cards */
+.card-row {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.card {
+  flex: 1;
+  min-width: 0;
+  height: 200px;
+  border-radius: 8px;
+  border: 1px solid #222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.card:hover { border-color: red; }
+.card-num {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 52px;
+  color: #e50914;
+  opacity: 0.15;
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  line-height: 1;
+}
+.card-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 9px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 2px 7px;
+  border-radius: 3px;
+}
+.tag-new { background: #e50914; color: white; }
+.tag-top { background: #f5a623; color: black; }
+.card-genre {
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: #e50914;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+.card-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  line-height: 1.2;
+}
+.card-year {
+  font-size: 11px;
+  color: #666;
+  margin-top: 6px;
+  font-weight: 300;
+}
